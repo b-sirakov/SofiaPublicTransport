@@ -1,0 +1,40 @@
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:background="@drawable/backgroudn_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.bojidar.sofiapublictransportapp.fragments.Favourites">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+            <Button
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:background="@android:color/transparent"
+                android:layout_gravity="end"
+                android:id="@+id/clear_fav_button"
+                android:text="Изчисти списъка"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_margin="15dp"
+                android:id="@+id/fav_stops_rv"
+                android:layout_gravity="center"
+                android:scrollbars="vertical"
+                android:fadeScrollbars="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </RelativeLayout>
